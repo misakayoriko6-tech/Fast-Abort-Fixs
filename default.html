@@ -1,0 +1,50 @@
+<div class="fast_abort_settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>⚡ 极速中断与卡死修复 (Fast Abort)</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content" style="display: none;">
+            <!-- 总开关 -->
+            <div class="fast-abort-item">
+                <label class="checkbox_label">
+                    <input id="fast_abort_enabled" type="checkbox" />
+                    <span>启用扩展自愈功能</span>
+                </label>
+            </div>
+
+            <!-- 极速拦截 Stop 按钮 -->
+            <div class="fast-abort-item">
+                <label class="checkbox_label">
+                    <input id="fast_abort_hook_stop" type="checkbox" />
+                    <span>瞬时响应中断点击（点击Stop立即释放输入框）</span>
+                </label>
+            </div>
+
+            <!-- 自动清理空占位消息 -->
+            <div class="fast-abort-item">
+                <label class="checkbox_label">
+                    <input id="fast_abort_clean_empty" type="checkbox" />
+                    <span>中断时自动修补空白消息气泡</span>
+                </label>
+            </div>
+
+            <!-- 卡死超时检测滑块 -->
+            <div class="fast-abort-item fast-abort-slider-box">
+                <div class="fast-abort-label-group">
+                    <span>无响应/卡死判定时间: </span>
+                    <div><b id="fast_abort_timeout_val" class="fast-abort-val">10</b> 秒</div>
+                </div>
+                <input id="fast_abort_timeout" type="range" min="3" max="60" step="1" />
+            </div>
+
+            <!-- 手动一键解锁按钮（全宽自适应） -->
+            <div class="fast-abort-item fast-abort-btn-wrapper">
+                <button id="fast_abort_manual_unlock" type="button" class="menu_button fast-abort-unlock-btn">
+                    <i class="fa-solid fa-unlock"></i>
+                    <span>立即强制解锁当前输入框</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
